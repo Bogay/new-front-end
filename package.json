@@ -9,7 +9,9 @@
     "cf-build": "npm install -g pnpm && pnpm run build",
     "lint": "eslint -c .eslintrc.js --ext .ts . && prettier -c .prettierrc --check ./src",
     "format": "prettier -c .prettierrc --write ./src",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.7",
@@ -43,6 +45,13 @@
   "devDependencies": {
     "@iconify-json/uil": "^1.1.0",
     "@playwright/test": "^1.42.1",
+    "@storybook/addon-essentials": "^7.1.1",
+    "@storybook/addon-interactions": "^7.1.1",
+    "@storybook/addon-links": "^7.1.1",
+    "@storybook/blocks": "^7.1.1",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/vue3": "^7.1.1",
+    "@storybook/vue3-vite": "^7.1.1",
     "@types/dompurify": "^2.3.3",
     "@types/katex": "^0.11.1",
     "@types/markdown-it": "^12.2.3",
@@ -54,9 +63,13 @@
     "autoprefixer": "^10.4.2",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-storybook": "^0.6.13",
     "postcss": "^8.4.6",
     "prettier": "^2.8.2",
     "prettier-plugin-tailwindcss": "^0.1.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.1.1",
     "tailwindcss": "^3.0.23",
     "typescript": "^5.4.2",
     "unplugin-icons": "^0.15.1",
